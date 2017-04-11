@@ -36,6 +36,10 @@ springBoot  {
 	buildInfo()
 }
 
+publish {
+	dependsOn assemble
+}
+
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
