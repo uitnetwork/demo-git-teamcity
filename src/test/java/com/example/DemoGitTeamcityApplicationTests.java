@@ -13,7 +13,7 @@ public class DemoGitTeamcityApplicationTests {
 
     @Test
     public void contextLoads() {
-        System.out.println("This one is in release branch");
+        System.out.println("This one is in release branch 123");
     }
 
 }
