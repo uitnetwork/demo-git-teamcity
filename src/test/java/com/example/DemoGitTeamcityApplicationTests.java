@@ -13,7 +13,6 @@ public class DemoGitTeamcityApplicationTests {
 
     @Test
     public void contextLoads() {
-
         System.out.println("This one is master ");
     }
 
