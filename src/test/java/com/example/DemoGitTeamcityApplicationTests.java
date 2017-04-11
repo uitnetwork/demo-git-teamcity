@@ -15,8 +15,6 @@ public class DemoGitTeamcityApplicationTests {
     public void contextLoads() {
 
 
-
-
     }
 
 }
