@@ -13,8 +13,10 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
+apply plugin: 'maven-publish'
 
 version = file('version.txt').text.trim()
+group = 'com.example'
 sourceCompatibility = 1.8
 
 repositories {
@@ -32,4 +34,21 @@ dependencies {
 
 springBoot  {
 	buildInfo()
+}
+
+publishing {
+	publications {
+		mavenJava(MavenPublication) {
+			from components.java
+		}
+	}
+}
+
+publishing {
+	repositories {
+		maven {
+			// change to point to your repo, e.g. http://my.org/repo
+			url "/home/ninhdoan/repo"
+		}
+	}
 }
