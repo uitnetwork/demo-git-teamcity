@@ -64,7 +64,7 @@ class DemoResource {
 
     @GetMapping("/applicationVersion")
     public String applicationVersion() {
-        return applicationVersion;
+        return applicationVersion + " in release 2";
     }
 
 }
